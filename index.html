@@ -27,55 +27,84 @@
 
   
   <style>
+    :root{ 
+      --pri_color : Gold;
+      --sec_color : Silver;
+      --bor_color : Silver;
+      --but_high : white; 
+      --gradient_color: black;
+      --gradient : linear-gradient(to bottom right, var(--gradient_color));
+    }
+    *{padding: 0; margin: 0;}
     body{background-color:Black;
-         color:Gold; display:block;
-        & > * {margin:0; padding:0;
-               display:block;}}
-    main{width:70%; height:100%;
-        margin-left:10%;
-        border:2px,solid,gold;}
-    div,li{background-image: linear-gradient(to bottom right, black, grey);
-          border: 2px, solid, gold;
-          border-radius:5px;
-          width:100%;}
-    h1{color:silver;
+         color:var(--pri_color); display:flex;
+         margin: 0; padding: 0;}|
+    main,nav {margin:0; padding:0;
+              display:flex; position:fixed;
+              border-radius: 10px;}
+    main {width:75%; height:100%;
+         margin-left:5%; padding-left: 2%;
+         background-image: var(--gradient);}
+    li{border: 2px, solid, var(--bor_color);
+       border-radius:5px; padding:10px;margin:10px;
+       width:50%; height:100%;
+       & > p{width:80%; text-justify:auto;};
+       }
+    a {border-radius:20px; width:30%;height:40px;
+      background-image: linear-gradient(to bottom right, black,gold);
+      display:block; box-shadow: 3px 3px lime;
+      font-size: 15px; margin:0; padding: 0 10px 0 10px;
+      &:hover{color:var(--pri_color);};
+      &:active{color:var(--bor_color);};
+       }
+    h1{color:var(--sec_color);
        font-weight:900;}
-    p{width:80%;}
-    .navbar{width:10%; height:100%;
-            position:fixed; left:0px;
-            border:2px, solid, silver;
+    h3,a {color: var(--sec_color);
+      font-size: 15px;}
+    p{width:80%; font-size:15px;}
+    .navbar{width:5%; height:100%;
+            position:fixed; left:0%;
+            border:2px, solid, gold;
             border-radius:5px;
-            background-image: linear-gradient(to bottom right, black, grey);
+            background-image: linear-gradient(to bottom right,
+            black, gold);
            }
     .hotbar{width:20%; height:100%;
-            position:fixed; right:0px;
-            border:2px, solid, silver;
+            position:fixed; right:0%;
+            border:2px, solid, gold;
             border-radius:5px;
-            background-image: linear-gradient(to bottom right, black, grey);
+            background-image: linear-gradient(to bottom right, black, gold);
            }
     .icon,.logo{width:30px; height:30px;
                 border:1px, solid, gold; border-radius:2px;
                 background-color:silver;
          }
-    .logo{width:100px; height:100px;
-          display:block;
+    .logo{width:100%; height:auto; position: relative;
+          display:block; left: 0;top: 0;
          }
   </style>
 </head>
 
 <body>
-<nav class="navbar"></nav>
+<nav class="navbar">
+  <a href="home"><img
+  src=https://media.discordapp.net/attachments/1343924902008328192/1343925595964313742/Untitled132_20250225180648.png></a>
+</nav>
 <main>
-<div>
+<div style="display:flex;">
+<div style="float:left; width:48%;">
   <h1>Welcome to Sparks-Elite</h1>
   <h3>Empowering Innovation Since 2018</p>
   <p>We're proud to introduce Sparks-Elite, a cutting-edge web and app development company founded by Solomon Slabu, aka Hyuhjhih, a visionary pioneer in the programming and development field.</p>
   <p>With a passion for innovation and a drive to push boundaries, we've been building from scratch and making great strides since our inception.</p>
+  </div>
+  <div style="float:right; width:48%; padding-right:2%;">
   <img class="logo" src="sparks-elite_logo_main.png" alt="Sparks-Elite Logo">
+  </div>
 </div>
-
+<br>
 <div>
-  <h2>Our Story</h2>
+  <h3>Our Story</h2>
   <p>With a rich history of working with top development teams, 
     including SuperCell and IGG, and leading design 
     efforts at ZerotouchSystems, I've had the privilege of 
@@ -84,20 +113,21 @@
     and I'm always eager to take on new challenges.</p>
   
 </div>
-
+<br>
 <div>
-  <h2>Current Ventures</h2>
+  <h3>Current Ventures</h3>
   <ul>
     <li>
-      <h3>Sparks-Elite Webdesigns & Development</h3>
+    <h3><a href="#Sparks-Elite"> Sparks-Elite Webdesigns & Development </a> </h3>
       <p>Your one-stop-shop for web design and development needs.</p>
     </li>
     <li>
-      <h3>Sparks-Elite App Development and Tech Solutions</h3>
+      <h3><a href="#Sparks-Elite"> Sparks-Elite App Development and Tech
+      Solutions </a></h3>
       <p>Bringing your app ideas to life with our expert team.</p>
     </li>
     <li>
-      <h3>Code Forge Academy of Programming</h3>
+      <h3><a href="Sparks-Elite">  Code Forge Academy of Programming  </a></h3>
       <p>Learn programming with our Discord-based tutoring platform.</p>
     </li>
     <li>
