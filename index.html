@@ -1,5 +1,5 @@
 <!Doctype html>
-<html>
+<html style="width:100%;">
 <head>
   
 <title>SPARKS-ELITE ® | HOME PAGE INDEX</title>
@@ -28,89 +28,120 @@
   
   <style>
     :root{ 
-      --pri_color : Gold;
+      --pri_color : gold;
       --sec_color : Silver;
       --bor_color : Silver;
-      --but_high : white; 
+      --but_high : lime; 
       --gradient_color: black;
       --gradient : linear-gradient(to bottom right, var(--gradient_color));
     }
     *{padding: 0; margin: 0;}
     body{background-color:Black;
-         color:var(--pri_color); display:flex;
-         margin: 0; padding: 0;}|
+         color:var(--pri_color); display:flex;};
     main,nav {margin:0; padding:0;
-              display:flex; position:fixed;
+              display:flex; 
+              flex-flow: column nowrap;
+              position:fixed;
               border-radius: 10px;}
-    main {width:75%; height:100%;
-         margin-left:5%; padding-left: 2%;
+    main {width:65%; height:100%;
+         margin-left:10%; padding-left: 2%;
          background-image: var(--gradient);}
-    li{border: 2px, solid, var(--bor_color);
+    li{border: 0px, solid, var(--bor_color);
        border-radius:5px; padding:10px;margin:10px;
-       width:50%; height:100%;
-       & > p{width:80%; text-justify:auto;};
+       width:50%; height:auto%; display: block;
        }
-    a {border-radius:20px; width:30%;height:40px;
-      background-image: linear-gradient(to bottom right, black,gold);
-      display:block; box-shadow: 3px 3px lime;
-      font-size: 15px; margin:0; padding: 0 10px 0 10px;
-      &:hover{color:var(--pri_color);};
-      &:active{color:var(--bor_color);};
+    a {border-radius:20px; width:80%; height:auto;
+      background-image: linear-gradient(to bottom right, gold, black,gold);color:
+      var(--sec_color);
+      display:block; box-shadow: 2px 2px lime;
+      &:hover{color:var(--but_high);};
+      &:active{color:var(--pri_color);};
        }
+    .active_event{background-image: linear-gradient(to bottom right, red, black,
+    red);box-shadow: 3px 3px lime;
+      &::before{content:"🔴";display:inline-block};
+    }
     h1{color:var(--sec_color);
-       font-weight:900;}
-    h3,a {color: var(--sec_color);
-      font-size: 15px;}
-    p{width:80%; font-size:15px;}
-    .navbar{width:5%; height:100%;
+       font-weight:900;font-size:80px;}
+    h3,summary,a {color: var(--sec_color);
+      font-size: 30px;}
+    summary{border: 1px solid var(--bor_color);
+            border-radius: 5%;display: block;
+            box-shadow: 2px 2px var(--but_high);
+    }
+    p{width:80%; font-size: 1.2em; justify-align:auto;}
+    .button{border-radius: 50%;width:90% ;height:auto;
+            margin:0 0 20% 0; border:2px solid gold;
+            display:block;box-shadow: 1px 1px lime;}
+    .navbar{width:8%; height:100%;
+            display: flex; flex-flow: column nowrap;
             position:fixed; left:0%;
             border:2px, solid, gold;
             border-radius:5px;
             background-image: linear-gradient(to bottom right,
             black, gold);
            }
-    .hotbar{width:20%; height:100%;
+    .hotbar{width:25%; height:100%;
+            display: flex;flex-flow: column nowrap;
             position:fixed; right:0%;
             border:2px, solid, gold;
             border-radius:5px;
             background-image: linear-gradient(to bottom right, black, gold);
+            li {margin:0; padding: 5%; width:80%}
            }
-    .icon,.logo{width:30px; height:30px;
-                border:1px, solid, gold; border-radius:2px;
-                background-color:silver;
+    .icon{width:100%; height:auto;
+          border-radius:50%;
          }
-    .logo{width:100%; height:auto; position: relative;
-          display:block; left: 0;top: 0;
+    .logo{width:100%; height:auto; position: static;
+          display:block;
          }
   </style>
 </head>
 
 <body>
 <nav class="navbar">
-  <a href="home"><img
-  src="https://cdn.discordapp.com/attachments/1343924902008328192/1343925595964313742/Untitled132_20250225180648.png?ex=67bf0bbf&is=67bdba3f&hm=5b07483fe587dd4cec6124f8aabc0078a3688f4aadeed14d6a922e3cef01982f&"></a>
+  <div><h3 style="width:100%;height:auto;font-size:25px;
+  margin-bottom:30px;background-color:black;"> Navigation </h3></div>
+  <a class="button" href="https://sparks-elite.github.io"><img class="icon"
+  src="https://cdn.discordapp.com/attachments/1343924902008328192/1343993243393855520/Untitled132_20250225223853.png?ex=67bf4abf&is=67bdf93f&hm=a50d3c1c9600a893faa3adccaa2388bfb5b5efe7ced810f701806e2667a07fe9&"></a>
+  
+    <a class="button" id=SPARKS-ELITE Webdesigns and development href="https://wa.me/919207581064"><img class="icon"
+  src="https://cdn.discordapp.com/attachments/1343924902008328192/1343928640064323675/20230124_125149.jpg?ex=67bf0e94&is=67bdbd14&hm=8935c665c72ed084c0029ffa00eb6812dc219c26fa689809e752e54e7d43486f&"></a>
+  
+    <a class="button" id="Code Forge" href="https://discord.com/invite/KEmDYGjs7r"><img class="icon"
+  src="https://cdn.discordapp.com/attachments/1343924902008328192/1343993243393855520/Untitled132_20250225223853.png?ex=67bf4abf&is=67bdf93f&hm=a50d3c1c9600a893faa3adccaa2388bfb5b5efe7ced810f701806e2667a07fe9&"></a>
+  
+    <a class="button" href="https://sparks-elite.github.io"><img class="icon"
+  src="https://cdn.discordapp.com/attachments/1343924902008328192/1343993243393855520/Untitled132_20250225223853.png?ex=67bf4abf&is=67bdf93f&hm=a50d3c1c9600a893faa3adccaa2388bfb5b5efe7ced810f701806e2667a07fe9&"></a>
+  
+    <a class="button" href="https://sparks-elite.github.io"><img class="icon"
+  src="https://cdn.discordapp.com/attachments/1343924902008328192/1343993243393855520/Untitled132_20250225223853.png?ex=67bf4abf&is=67bdf93f&hm=a50d3c1c9600a893faa3adccaa2388bfb5b5efe7ced810f701806e2667a07fe9&"></a>
+  
 </nav>
 <main>
+<h1>Welcome to Sparks-Elite</h1>
 <div style="display:flex;">
-<div style="float:left; width:48%;">
-  <h1>Welcome to Sparks-Elite</h1>
-  <h3>Empowering Innovation Since 2018</p>
+<div style="float:left; width:80%;">
+  <h3>Empowering Innovation Since 2018</h3>
   <p>We're proud to introduce Sparks-Elite, a cutting-edge web and app development company founded by Solomon Slabu, aka Hyuhjhih, a visionary pioneer in the programming and development field.</p>
   <p>With a passion for innovation and a drive to push boundaries, we've been building from scratch and making great strides since our inception.</p>
   </div>
-  <div style="float:right; width:48%; padding-right:2%;">
-  <img class="logo" src="https://cdn.discordapp.com/attachments/1343924902008328192/1343925595964313742/Untitled132_20250225180648.png?ex=67bf0bbf&is=67bdba3f&hm=5b07483fe587dd4cec6124f8aabc0078a3688f4aadeed14d6a922e3cef01982f&" alt="Sparks-Elite Logo">
+  <div style="float:right; width:30%; padding-right:2%;">
+  <img class="logo" src="https://cdn.discordapp.com/attachments/1343924902008328192/1343993243393855520/Untitled132_20250225223853.png?ex=67bf4abf&is=67bdf93f&hm=a50d3c1c9600a893faa3adccaa2388bfb5b5efe7ced810f701806e2667a07fe9&" alt="Sparks-Elite Logo">
   </div>
 </div>
 <br>
 <div>
   <h3>Our Story</h2>
   <p>With a rich history of working with top development teams, 
-    including SuperCell and IGG, and leading design 
+    including SuperCell, Kabam, Redigit and IGG, and leading design 
     efforts at ZerotouchSystems, I've had the privilege of 
     working on over 6 games under my own project design 
-    leadership. My expertise spans over 12 programming languages, 
-    and I'm always eager to take on new challenges.</p>
+    leadership. My expertise spans over 12 programming languages, AI and ML
+    applications and chatbots, and being one of the very few developers to
+  achieve Adaptive Learning algorithms through single devoloper initiatives.
+  <br>
+  <br> I'm always eager to take on new challenges :) </p>
   
 </div>
 <br>
@@ -134,23 +165,55 @@
       <h3>Aurora Comics and Webtoons</h3>
       <p>Where creativity meets innovation in the world of comics and webtoons.</p>
     </li>
-  </ul>
-</div>
+    <li>
+    <h3>Prototype AI Engines and Tools</h3>
+    <ol>
+    <li>  <details> <summary>HyuBot AI</summary>
+    <p style="width:300%">A multipurpose high-level AI bot using standalone single developer AI Engine "Hyu AI" created by myself, over 6 years of development and research, capable of 12+ AI engine algorithms, 8+ image generation algorithms, supports AI, ML, DA, and Adaptive Learning capabilities unique to single developer AI Engines, making me one of the pioneers in this area. <br> Available on Discord platform. (Don't worry, it's better than those self proclaimed "good" AI Engines)</p>
+    </details>
+    </li>
+    <li>  <details> <summary>Scarlett AI</summary>
+    <p style="width:300%">Your overall intellectual and sensical virtual companion, an attractive AI chat bot powered by Scar AI Developed by myself. Whether be it logical, humor, psychological, or etc etc, Scarlett can be one of the most outstanding AI chatbot you could ever find.<br> Available at Discord platform. (Don't flirt with her toooooo much!)</p>
+    </details>
+    </li>
+    <li>  <details> <summary>Captain Reynolds Bot</summary>
+    <p style="width:300%">A work in progress, underdevelopment project to incorporate AI
+    capabilities in physical realm. Powered by Luna AI, an AI engine I created,
+    still work in progress, can currently solve most generic and advanced
+    scientific problems using visual, digital or audio prompts.<br> Not
+    Available for public. Contact us for being part of the development.</p>
+    </details>
+    </li>
+    </ol>
+    </li>
 
 <div>
   <h2>Get in Touch</h2>
   <p>Want to stay up-to-date on our latest projects and news? Follow us on:</p>
   <ul>
-    <li><a href="#">Discord</a></li>
-    <li><a href="#">WhatsApp</a></li>
+    <li><a href="https://discord.com/invite/KEmDYGjs7r">Discord</a></li>
+    <li><a href="https://wa.me/919207581064">WhatsApp</a></li>
     <li><a href="#">Instagram</a></li>
   </ul>
   <p>Ready to collaborate or have a project in mind? Reach out to us at:</p>
-  <p><a href="#">[Insert contact information]</a></p>
+  <p><a href="mailto:sparks.elite.official@gmail.com">sparks.elite.official@gmail.com</a></p>
 </div>
 </main>
 
-<nav class="hotbar"></nav>
+<nav class="hotbar">
+  <h3>Current Projects & Events:</h3>
+  <div>
+  <li><a href="#">Project Webio</a></li>
+  <li><a href="#">Project Elementals</a></li>
+  <li><a href="#">Project Mind Colours</a></li>
+  <li><a class="active_event" href="#">Project Hyu AI Pikalabs.gif </a></li>
+  <li><a href="#">Event Markup Marker</a></li>
+  <li><a class="active_event" href="#">Project Age Of Civilizations</a></li>
+  <li><a href="#">Event Get On Your Knees !</a></li>
+  <li><a href="#">Project Big Atom</a></li>
+  <li><a class="active_event" href="https://sparks-elite.github.io/projects/IEDC%202025/EAPRS/workshops/py-pioneering-1/presentation_site.html">Event Py Pioneering 1</a></li>
+  </div>
+</nav>
 </body>
 
 
